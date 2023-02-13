@@ -75,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Layers & Tags")]
 	[SerializeField] private LayerMask _groundLayer;
 	#endregion
+
 	void PlayDust(){
 		dust.Play();
 	}
@@ -116,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.W))
 		{
 			OnJumpUpInput();
+
 		}
 
 		if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K))
