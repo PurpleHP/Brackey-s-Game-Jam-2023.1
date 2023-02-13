@@ -19,11 +19,12 @@ public class CamShake : MonoBehaviour
         {
             start = false;
             StartCoroutine(Shaking());
+        
         }
     }
-
     IEnumerator Shaking()
     {
+        
         Vector3 startPosition = transform.position;
         float elapsedTime = 0f;
         while (elapsedTime < duration)
@@ -33,7 +34,6 @@ public class CamShake : MonoBehaviour
             transform.position = startPosition + Random.insideUnitSphere * strength;
             yield return null;
         }
-
         transform.position = startPosition;
     }
 }
