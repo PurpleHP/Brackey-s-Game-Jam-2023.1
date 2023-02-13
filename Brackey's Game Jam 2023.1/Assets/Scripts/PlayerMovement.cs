@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	[SerializeField] ParticleSystem dust;
 	//Scriptable object which holds all the player's movement parameters. If you don't want to use it
 	//just paste in all the parameters, though you will need to manuly change all references in this script
 	public PlayerData Data;
@@ -74,7 +75,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Layers & Tags")]
 	[SerializeField] private LayerMask _groundLayer;
 	#endregion
-
+	void PlayDust(){
+		dust.Play();
+	}
     private void Awake()
 	{
 		RB = GetComponent<Rigidbody2D>();
@@ -283,6 +286,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 		else if (_isDashAttacking)
 		{
+			
 			Run(Data.dashEndRunLerp);
 		}
 
