@@ -8,10 +8,15 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float dampTime = 0.4f; //camera move more smooth
     private Vector3 cameraPos; //whic is where we want the camera move to
     private Vector3 velocity = Vector3.zero;
+    [SerializeField] private CamShake camShake;
+
 
     void FixedUpdate()
     {
-        cameraPos = new Vector3(Player.position.x, Player.position.y, -10f);
-        transform.position = Vector3.SmoothDamp(gameObject.transform.position, cameraPos, ref velocity, dampTime);
+        if(!camShake.start){
+            cameraPos = new Vector3(Player.position.x, Player.position.y, -10f);
+            transform.position = Vector3.SmoothDamp(gameObject.transform.position, cameraPos, ref velocity, dampTime);
+        }
+       
     }
 }

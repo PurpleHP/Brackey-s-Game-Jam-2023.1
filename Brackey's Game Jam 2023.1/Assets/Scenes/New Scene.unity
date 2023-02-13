@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 1823134522}
   - component: {fileID: 1823134521}
   - component: {fileID: 1823134524}
+  - component: {fileID: 1823134525}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -727,7 +728,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1957050247}
-  dampTime: 0.4
+  dampTime: 0.2
+  camShake: {fileID: 1823134525}
+--- !u!114 &1823134525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823134520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dae11626bc84414b90df5d58c563dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.4632269
+      outSlope: 1.4632269
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.012023576
+      value: 0.01759322
+      inSlope: -1.0992943
+      outSlope: -1.0992943
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.35736778
+    - serializedVersion: 3
+      time: 0.04133606
+      value: 0.00023269653
+      inSlope: 0.13735832
+      outSlope: 0.13735832
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.55754787
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 0.05
 --- !u!1 &1957050244
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +791,7 @@ GameObject:
   - component: {fileID: 1957050251}
   - component: {fileID: 1957050250}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,6 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 84a5bc742e694c54f89c978e32c365ad, type: 2}
+  camShake: {fileID: 1823134525}
   _groundCheckPoint: {fileID: 2002546089}
   _groundCheckSize: {x: 0.49, y: 0.03}
   _frontWallCheckPoint: {fileID: 1086324150}

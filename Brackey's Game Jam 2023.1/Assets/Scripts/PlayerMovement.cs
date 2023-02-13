@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	//Scriptable object which holds all the player's movement parameters. If you don't want to use it
 	//just paste in all the parameters, though you will need to manuly change all references in this script
 	public PlayerData Data;
+	[SerializeField] private CamShake camShake;
 
 	#region COMPONENTS
     public Rigidbody2D RB { get; private set; }
@@ -117,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K))
 		{
 			OnDashInput();
+			camShake.start = true;
 		}
 		#endregion
 
