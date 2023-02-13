@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1957050247}
-  dampTime: 0.4
+  dampTime: 0.2
 --- !u!1 &1957050244
 GameObject:
   m_ObjectHideFlags: 0

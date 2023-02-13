@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
 
     void FixedUpdate()
     {
-        cameraPos = new Vector3(Player.position.x, Player.position.y, -10f);
+        cameraPos = new Vector3(Player.position.x, Player.position.y +1.4f, -10f);
         transform.position = Vector3.SmoothDamp(gameObject.transform.position, cameraPos, ref velocity, dampTime);
     }
 }
