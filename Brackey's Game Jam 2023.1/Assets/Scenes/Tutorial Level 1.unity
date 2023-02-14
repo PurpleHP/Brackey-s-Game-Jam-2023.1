@@ -6138,8 +6138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1957050247}
   dampTime: 0.2
-  camShake: {fileID: 1823134525}
-  camHeight: 0
+  camHeight: 1.57
 --- !u!114 &1823134525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6154,10 +6153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 0
   curve:
-    serializedVersion: 2
     m_Curve:
-    - serializedVersion: 3
-      time: 0
+    - time: 0
       value: 0
       inSlope: 1.4632269
       outSlope: 1.4632269
@@ -6165,8 +6162,7 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.012023576
+    - time: 0.012023576
       value: 0.01759322
       inSlope: -1.0992943
       outSlope: -1.0992943
@@ -6174,8 +6170,7 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.35736778
-    - serializedVersion: 3
-      time: 0.04133606
+    - time: 0.04133606
       value: 0.00023269653
       inSlope: 0.13735832
       outSlope: 0.13735832
@@ -7270,7 +7265,6 @@ MonoBehaviour:
   Dash: {fileID: 1957050252}
   dust: {fileID: 687501024}
   Data: {fileID: 11400000, guid: 84a5bc742e694c54f89c978e32c365ad, type: 2}
-  camShake: {fileID: 1823134525}
   _groundCheckPoint: {fileID: 2002546089}
   _groundCheckSize: {x: 0.49, y: 0.03}
   _frontWallCheckPoint: {fileID: 1086324150}
@@ -7398,8 +7392,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0}
+      key0: {r: 0.47450984, g: 0.18431373, b: 0.61960787, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
