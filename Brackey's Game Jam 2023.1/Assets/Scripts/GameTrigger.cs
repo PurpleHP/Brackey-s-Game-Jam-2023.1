@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GameTrigger : MonoBehaviour
 {
+    [SerializeField] GameObject Terrain;
+    private TilemapRenderer tr;
+
     [SerializeField] GameObject PlayerBody;
     private SpriteRenderer sr;
-    //[SerializeField] SpriteRenderer tr;
+    
 
     [SerializeField] GameObject PlayerMovement;
     private PlayerMovement pm;
@@ -18,6 +22,7 @@ public class GameTrigger : MonoBehaviour
     {
         sr = PlayerBody.GetComponent<SpriteRenderer>();
         pm = PlayerMovement.GetComponent<PlayerMovement>();
+        tr = Terrain.GetComponent<TilemapRenderer>();
     }
 
 
@@ -33,7 +38,7 @@ public class GameTrigger : MonoBehaviour
             pm.enabled = true;
         }
          if (counter > 10f){
-            //tr.enabled = true;
+            tr.enabled = true;
         }
         if (counter > 15f){
             pm.jumpMove = true;
