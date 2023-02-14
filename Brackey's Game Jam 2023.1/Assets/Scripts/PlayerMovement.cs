@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	[SerializeField] public TrailRenderer Dash;
 	[SerializeField] ParticleSystem dust;
 	//Scriptable object which holds all the player's movement parameters. If you don't want to use it
 	//just paste in all the parameters, though you will need to manuly change all references in this script
