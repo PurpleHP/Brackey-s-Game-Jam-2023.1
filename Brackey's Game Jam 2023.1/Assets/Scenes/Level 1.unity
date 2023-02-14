@@ -594,7 +594,6 @@ GameObject:
   - component: {fileID: 1823134522}
   - component: {fileID: 1823134521}
   - component: {fileID: 1823134524}
-  - component: {fileID: 1823134525}
   - component: {fileID: 1823134526}
   m_Layer: 0
   m_Name: Main Camera
@@ -684,18 +683,6 @@ MonoBehaviour:
   Player: {fileID: 1957050247}
   dampTime: 0.2
   camHeight: 1.57
---- !u!114 &1823134525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823134520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dae11626bc84414b90df5d58c563dad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1823134526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +787,7 @@ TilemapRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876958211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

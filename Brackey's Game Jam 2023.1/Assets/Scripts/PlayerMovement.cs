@@ -10,6 +10,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	public bool sideMove = false;
+	public bool dashMove = false;
+	public bool jumpMove = false;
+
+
 	[SerializeField] public TrailRenderer Dash;
 	[SerializeField] ParticleSystem dust;
 	//Scriptable object which holds all the player's movement parameters. If you don't want to use it
@@ -109,18 +114,18 @@ public class PlayerMovement : MonoBehaviour
 		if (_moveInput.x != 0)
 			CheckDirectionToFace(_moveInput.x > 0);
 
-		if(Input.GetKeyDown(KeyCode.W))
+		if(Input.GetKeyDown(KeyCode.W) && jumpMove)
         {
 			OnJumpInput();
         }
 
-		if (Input.GetKeyUp(KeyCode.W))
+		if (Input.GetKeyUp(KeyCode.W) && jumpMove)
 		{
 			OnJumpUpInput();
 
 		}
 
-		if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K))
+		if ((Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K)) && dashMove)
 		{
 			OnDashInput();
 		}

@@ -6,6 +6,7 @@ public class GameTrigger : MonoBehaviour
 {
     [SerializeField] GameObject PlayerBody;
     private SpriteRenderer sr;
+    //[SerializeField] SpriteRenderer tr;
 
     [SerializeField] GameObject PlayerMovement;
     private PlayerMovement pm;
@@ -30,6 +31,15 @@ public class GameTrigger : MonoBehaviour
         {
             sr.enabled = true;
             pm.enabled = true;
+        }
+         if (counter > 10f){
+            //tr.enabled = true;
+        }
+        if (counter > 15f){
+            pm.jumpMove = true;
+        }
+        if (counter > 20f){
+            pm.dashMove = true;
         }
         else
         {
