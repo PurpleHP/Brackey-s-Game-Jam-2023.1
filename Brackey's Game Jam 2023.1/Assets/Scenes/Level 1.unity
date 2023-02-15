@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 890593687}
+  dialogueTime: []
   sentences:
   - Welcome to the game Player. It seems really lonely here.
   - Now it's just you and your mere body. I know that feeling, and I guess you know
@@ -250,6 +251,7 @@ MonoBehaviour:
   - That weird looking circle is a portal. It teleports you to your next experi..
     I meant next level. Yeah, next level. It takes you to a new level.
   typingspeed: 0.1
+  counter: 0
 --- !u!4 &506599310
 Transform:
   m_ObjectHideFlags: 0
@@ -1033,78 +1035,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
   m_PrefabInstance: {fileID: 6436134312667447648}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &1957050252
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361829661}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d7268eee51e0196449c89974f7a6b01b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!95 &1957050253
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361829661}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6e3711e7dd26064680ad5d62f1844a9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1854511233511283715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1115,6 +1045,10 @@ PrefabInstance:
     - target: {fileID: 1854511233783221093, guid: 26ce885d7fba3dc43a1f7ae652396ff8, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854511233783221093, guid: 26ce885d7fba3dc43a1f7ae652396ff8, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1854511233783221099, guid: 26ce885d7fba3dc43a1f7ae652396ff8, type: 3}
       propertyPath: m_RootOrder
@@ -1164,6 +1098,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 361829661}
+    - target: {fileID: 1854511234023577120, guid: 26ce885d7fba3dc43a1f7ae652396ff8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26ce885d7fba3dc43a1f7ae652396ff8, type: 3}
 --- !u!1001 &3919234461024579368
@@ -1291,12 +1229,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1876958211}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: bodyTime
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dashTime
       value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: eyesTime
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: jumpTime
-      value: 43
+      value: 61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: moveTime
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: PlayerBody
@@ -1316,26 +1266,42 @@ PrefabInstance:
       objectReference: {fileID: 361829661}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: sentences.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dialogueTime.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: sentences.Array.data[4]
+      value: That weird looking circle is a portal. It teleports you to your next
+        experi.. I meant next level. Yeah, next level. It takes you to a new level.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: sentences.Array.data[5]
       value: Those lazy developers also forgot to give you your jumping ability.
         Wait a second, alright done. Press Space to jump. You can hold it to go a
         little higher.
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
-      propertyPath: sentences.Array.data[5]
-      value: That weird looking circle is a portal. It teleports you to your next
-        experi.. I meant next level. Yeah, next level. It takes you to a new level.
+      propertyPath: sentences.Array.data[6]
+      value: Is there any problem? Why are you still waiting go inside the portal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: dialogueTime.Array.data[0]
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: dialogueTime.Array.data[4]
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dialogueTime.Array.data[5]
-      value: 65
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: dialogueTime.Array.data[6]
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
@@ -1346,41 +1312,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 836053496, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313315101272, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_Name
-      value: Player Demo
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313315101274, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774820, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774820, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1420,30 +1358,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: dashMove
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: jumpMove
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: sideMove
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774828, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_Time
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436134313545774828, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

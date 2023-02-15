@@ -278,7 +278,7 @@ Transform:
   m_Children:
   - {fileID: 1855654436}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &284661609
 ParticleSystemRenderer:
@@ -5093,58 +5093,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6436134313545774820, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
   m_PrefabInstance: {fileID: 6436134312667447648}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &506599308
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 506599310}
-  - component: {fileID: 506599309}
-  m_Layer: 0
-  m_Name: Dialogue Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &506599309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506599308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04062c6a197472646b514732e24b9a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDisplay: {fileID: 890593687}
-  sentences:
-  - Hey who are you?
-  - 
-  - 
-  - 
-  - 
-  typingspeed: 0.1
---- !u!4 &506599310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506599308}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 258.1449, y: 148.22336, z: -1.4306645}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627292500
 GameObject:
   m_ObjectHideFlags: 0
@@ -14011,8 +13959,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 649598345
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d7268eee51e0196449c89974f7a6b01b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14045,6 +13993,111 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1001 &5447905940031290033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5447905939846417944, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.81682086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9046326
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.7253475
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417946, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: textDisplay
+      value: 
+      objectReference: {fileID: 890593687}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: typingspeed
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: dialogueTime.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: Ah, a towering wall blocks your path.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: Fortunately, you possess the ability to dash.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: What? Dont you know how to dash? hmm...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: You can press 'Left shift' or 'X' key to dash.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: dialogueTime.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: dialogueTime.Array.data[1]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: dialogueTime.Array.data[2]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447905939846417947, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
+      propertyPath: dialogueTime.Array.data[3]
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd37c3021d7f07d48bd51f5496997cdd, type: 3}
 --- !u!1001 &6436134312667447648
 PrefabInstance:
   m_ObjectHideFlags: 0
