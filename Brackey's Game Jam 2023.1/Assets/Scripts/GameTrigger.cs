@@ -14,12 +14,15 @@ public class GameTrigger : MonoBehaviour
 
     [SerializeField] GameObject PlayerMovement;
     private PlayerMovement pm;
+    [SerializeField] Animator a;
 
     [SerializeField] float counter = 0f;
     public bool check;  
-
+    [SerializeField] Animation anim;
     void Start()
     {
+        anim = PlayerBody.GetComponent<Animation>();
+        a = PlayerBody.GetComponent<Animator>();
         sr = PlayerBody.GetComponent<SpriteRenderer>();
         pm = PlayerMovement.GetComponent<PlayerMovement>();
         tr = Terrain.GetComponent<TilemapRenderer>();
@@ -51,5 +54,12 @@ public class GameTrigger : MonoBehaviour
             check = true;
         }
 
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Portal")){
+            a.enabled = true;
+            //anim.Play();
+        }
     }
 }
