@@ -23,10 +23,13 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(typingspeed);
         }
     }
-
-
-    void Update()
+    public void NextSentences()
     {
-        
+        if(index < sentences.Length - 1)
+        {
+            index++;
+            textDisplay.text = "";
+            StartCoroutine(Type());
+        }
     }
 }

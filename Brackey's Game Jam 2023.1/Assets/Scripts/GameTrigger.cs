@@ -10,19 +10,17 @@ public class GameTrigger : MonoBehaviour
 
     [SerializeField] GameObject PlayerBody;
     private SpriteRenderer sr;
-    
+
+    [SerializeField] GameObject Portal;
 
     [SerializeField] GameObject PlayerMovement;
     private PlayerMovement pm;
-    [SerializeField] Animator a;
 
     [SerializeField] float counter = 0f;
     public bool check;  
-    [SerializeField] Animation anim;
+
     void Start()
     {
-        anim = PlayerBody.GetComponent<Animation>();
-        a = PlayerBody.GetComponent<Animator>();
         sr = PlayerBody.GetComponent<SpriteRenderer>();
         pm = PlayerMovement.GetComponent<PlayerMovement>();
         tr = Terrain.GetComponent<TilemapRenderer>();
@@ -42,6 +40,7 @@ public class GameTrigger : MonoBehaviour
         }
          if (counter > 10f){
             tr.enabled = true;
+            Portal.transform.position = new Vector3(11.29f, -5.456f, 0);
         }
         if (counter > 15f){
             pm.jumpMove = true;
@@ -54,12 +53,5 @@ public class GameTrigger : MonoBehaviour
             check = true;
         }
 
-    }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Portal")){
-            a.enabled = true;
-            //anim.Play();
-        }
     }
 }
