@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4545458060569785112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4545458060569785118}
+  - component: {fileID: 4545458060569785119}
+  m_Layer: 0
+  m_Name: Game Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4545458060569785118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545458060569785112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2079849, y: -0.60542107, z: 1.3512595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4545458060569785119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545458060569785112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d314e593472945344afe9f0c7d10e3cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Terrain: {fileID: 0}
+  counter: 0
+  bodyTime: 7
+  eyesTime: 20
+  moveTime: 36
+  jumpTime: 28
+  dashTime: 30
+  PlayerDemo: {fileID: 0}
+  PlayerBody: {fileID: 0}
+  Portal: {fileID: 0}
+  PlayerMovement: {fileID: 0}
+  dialogueTime:
+  - 7
+  - 14
+  - 27
+  - 40
+  - 50
+  - 60
+  - 70
+  textDisplay: {fileID: 0}
+  sentences:
+  - Welcome to the game Player. It seems really lonely here.
+  - Now it's just you and your mere body. I know that feeling, and I guess you know
+    it too.
+  - Oh, you can't see anything, right? Don't panic but, here are your eyes... There
+    you go. Now it's less lonely.
+  - Did you try moving? The code might now work right now. Let me tell the developers
+    to restart. Ok, now you can move with pressing A or D.
+  - Good
+  - Those lazy developers also forgot to give you your jumping ability. Wait a second,
+    alright done. Press Space to jump. You can hold it to go a little higher.
+  - That weird looking circle is a portal. It teleports you to your next experi..
+    I meant next level. Yeah, next level. It takes you to a new level.
+  typingspeed: 0.07
