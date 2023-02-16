@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 4764
+  controlID: 6548
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 4765
+  controlID: 6549
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 4766
+  controlID: 6550
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 4767
+  controlID: 6551
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,9 +249,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 52d1feff
-      m_LastClickedID: -77486
-      m_ExpandedIDs: 24d1feffd2a8ffffd4a8ffff54aaffff20abffff70acffff50b0ffff4cb1ffffb8b2ffffaeb3ffff1ab5ffff16b6ffff28d1ffff7ad2fffff8faffff28b50000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c07cfeffb47dfeff787ffeffa080feff9481feff5683feffcc8afeff4a8cfeff0e8efeff24d1feffd2a8ffffd4a8ffff54aaffff20abffff70acffff50b0ffff4cb1ffffb8b2ffffaeb3ffff1ab5ffff16b6ffff28d1ffff7ad2fffff8faffff28b5000038c70000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -582,9 +582,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.9461348, y: 2.9583728, z: 0.0077884486}
+    m_Target: {x: 0.9321866, y: -0.54742134, z: -0.013201661}
     speed: 2
-    m_Value: {x: 3.9461348, y: 2.9583728, z: 0.0077884486}
+    m_Value: {x: 0.9321866, y: -0.54742134, z: -0.013201661}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -635,9 +635,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.839143
+    m_Target: 11.451393
     speed: 2
-    m_Value: 9.839143
+    m_Value: 11.451393
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -784,21 +784,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\Brackey-s-Game-Jam-2023.1\Brackey's Game Jam 2023.1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e700000
-    m_LastClickedID: 28782
+    m_SelectedIDs: 72700000
+    m_LastClickedID: 28786
     m_ExpandedIDs: 000000004470000046700000487000004a7000004c7000004e700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -852,9 +852,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 52d1feff
-    m_LastClickedInstanceID: -77486
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000aa5f0000dc83000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -973,7 +973,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 263
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
