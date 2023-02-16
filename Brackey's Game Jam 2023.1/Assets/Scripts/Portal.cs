@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class Portal : MonoBehaviour
     void Start()
     {
         a = Player.GetComponent<Animator>();
-
     }
 
 
@@ -22,6 +22,14 @@ public class Portal : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             a.enabled = true;
+            StartCoroutine(NextLevel());
+
+
         }
+    }
+    IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
