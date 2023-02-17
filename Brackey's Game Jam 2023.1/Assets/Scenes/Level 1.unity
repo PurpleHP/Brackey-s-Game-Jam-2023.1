@@ -1130,7 +1130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dashTime
-      value: 45
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: eyesTime
@@ -1162,11 +1162,11 @@ PrefabInstance:
       objectReference: {fileID: 361829661}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: sentences.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dialogueTime.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: sentences.Array.data[4]
@@ -1184,6 +1184,11 @@ PrefabInstance:
       value: Is there any problem? Why are you still waiting go inside the portal.
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: sentences.Array.data[7]
+      value: OK, fine. To reward your patience, your dash is unlocked. Press LeftShift
+        or X
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dialogueTime.Array.data[0]
       value: 6.3
       objectReference: {fileID: 0}
@@ -1199,6 +1204,10 @@ PrefabInstance:
       propertyPath: dialogueTime.Array.data[6]
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
+      propertyPath: dialogueTime.Array.data[7]
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
 --- !u!1001 &6436134312667447648
@@ -1208,6 +1217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1957050252, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774820, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1254,6 +1267,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774823, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: dashMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: jumpMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
