@@ -9508,8 +9508,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
-  m_Origin: {x: -18, y: -38, z: 0}
-  m_Size: {x: 324, y: 123, z: 1}
+  m_Origin: {x: -264, y: -38, z: 0}
+  m_Size: {x: 570, y: 330, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
