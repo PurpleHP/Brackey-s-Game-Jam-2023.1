@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 28808
+  controlID: 32969
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 28809
+  controlID: 32970
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 28810
+  controlID: 32971
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 28811
+  controlID: 32972
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,9 +249,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1ea2faff
-      m_LastClickedID: -351714
-      m_ExpandedIDs: 62fffaff9602fbffba03fbfffe04fbff4405fbfff806fbff1c08fbff240bfbff4c85fbff4e85fbff2c92fbffbc9dfbffb89efbff08a3fcff0aa3fcff2ea4fcffbea5fcff7ca7fcff06a9fcff2aaafcff5cabfcff80acfcff3eaefcff5ec0fcff1ec2fcffdcc3fcff30c5fcff62c6fcff86c7fcff6609fdff9610fdff6e18fdffec5dfdff100dfeff001ffeff561ffeff581ffeffda12ffffcc38ffff4239ffff4a39ffff6e39ffff443fffffd648fffffa49ffff1e4bffff504cffff484effff6c4fffff0451ffffb052ffff0454ffff2656ffff3a64ffff546bffffeea1ffffecf3ffff5cf5ffffd0f6fffff8faffffa07300006a740000b83601006c410100705301008a530100e08702000c88020064bc02007edf0200f26c0300
+      m_SelectedIDs: 6a7f0300
+      m_LastClickedID: 229226
+      m_ExpandedIDs: e069faff026bfaff3a6dfaffe276faff9678faffba79faffe87cfaffa27ffaff62fffaff9602fbffba03fbfffe04fbff4405fbfff806fbff1c08fbff240bfbff4c85fbff4e85fbff2c92fbffbc9dfbffb89efbff08a3fcff0aa3fcff2ea4fcffbea5fcff7ca7fcff06a9fcff2aaafcff5cabfcff80acfcff3eaefcff5ec0fcff1ec2fcffdcc3fcff30c5fcff62c6fcff86c7fcff6609fdff9610fdff6e18fdffec5dfdff100dfeff001ffeff561ffeff581ffeffda12ffffcc38ffff4239ffff4a39ffff6e39ffff443fffffd648fffffa49ffff1e4bffff504cffff484effff6c4fffff0451ffffb052ffff0454ffff2656ffff3a64ffff546bffffeea1ffffecf3ffff5cf5ffffd0f6fffff8faffffa07300006a740000b83601006c410100705301008a530100e08702000c88020064bc02007edf0200f26c03006a7f0300b47f0300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -582,9 +582,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 60.982277, y: 1.5476633, z: 0.82366765}
+    m_Target: {x: 41.881187, y: 1.174074, z: 0.34872255}
     speed: 2
-    m_Value: {x: 60.982277, y: 1.5476633, z: 0.82366765}
+    m_Value: {x: 41.881187, y: 1.174074, z: 0.34872255}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -635,9 +635,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.502663
+    m_Target: 27.703804
     speed: 2
-    m_Value: 9.502663
+    m_Value: 27.703804
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -709,8 +709,8 @@ MonoBehaviour:
     y: 0
     width: 397
     height: 574
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -784,21 +784,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\Brackey-s-Game-Jam-2023.1\Brackey's Game Jam 2023.1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 82700000
-    m_LastClickedID: 28802
+    m_SelectedIDs: 58700000
+    m_LastClickedID: 28760
     m_ExpandedIDs: 00000000587000005a7000005c7000005e7000006070000062700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -852,8 +852,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1ea2faff
-    m_LastClickedInstanceID: -351714
+    m_SelectedInstanceIDs: 6a7f0300
+    m_LastClickedInstanceID: 229226
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000aa5f0000dc83000000000000
     m_RenameOverlay:
