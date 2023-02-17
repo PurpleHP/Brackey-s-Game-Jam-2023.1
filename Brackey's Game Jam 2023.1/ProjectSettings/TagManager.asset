@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Portal
   - Enemy
+  - Yellow
+  - Blue
   layers:
   - Default
   - TransparentFX
