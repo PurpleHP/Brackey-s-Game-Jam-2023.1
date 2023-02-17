@@ -7,9 +7,11 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+
 	public bool sideMove = false;
 	public bool dashMove = false;
 	public bool jumpMove = false;
@@ -81,9 +83,7 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private LayerMask _groundLayer;
 	#endregion
 
-	void PlayDust(){
-		dust.Play();
-	}
+	
     private void Awake()
 	{
 		RB = GetComponent<Rigidbody2D>();
@@ -521,6 +521,23 @@ public class PlayerMovement : MonoBehaviour
 	}
     #endregion
 
+	#region OUR CODE
+	//Bizim kod
+	void PlayDust(){
+		dust.Play();
+	}
+	void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Kill();
+        }
+    }
+	void Kill(){
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
+	// Bİizm kod
+	#endregion
 
     #region CHECK METHODS
     public void CheckDirectionToFace(bool isMovingRight)
