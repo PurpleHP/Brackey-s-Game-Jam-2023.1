@@ -6,10 +6,6 @@ public class PlayerPos : MonoBehaviour
 {
     private GameMaster gm;
 
-    public PlayerPos()
-    {
-    }
-
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -20,7 +16,7 @@ public class PlayerPos : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

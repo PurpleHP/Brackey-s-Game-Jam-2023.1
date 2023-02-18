@@ -24,4 +24,5 @@ public class MainMenuButton : MonoBehaviour
         yield return new WaitUntil(()=>black.color.a == 1);
         SceneManager.LoadScene(goToLevel);
     }
+    
 }

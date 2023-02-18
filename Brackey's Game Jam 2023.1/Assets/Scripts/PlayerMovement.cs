@@ -8,6 +8,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class PlayerMovement : MonoBehaviour
 	public bool dashMove = false;
 	public bool jumpMove = false;
 
+	[SerializeField] Image black;
+    [SerializeField] int nextLevel;
+    [SerializeField] Animator anim;
+	private SpriteRenderer eye;
+
+ 	[SerializeField] GameObject PlayerBody;
 
 	[SerializeField] public TrailRenderer Dash;
 	[SerializeField] ParticleSystem dust;
@@ -93,10 +100,13 @@ public class PlayerMovement : MonoBehaviour
 	{
 		SetGravityScale(Data.gravityScale);
 		IsFacingRight = true;
+		eye = PlayerBody.GetComponent<SpriteRenderer>();
+
 	}
 
 	private void Update()
 	{
+	
         #region TIMERS
         LastOnGroundTime -= Time.deltaTime;
 		LastOnWallTime -= Time.deltaTime;
@@ -523,18 +533,24 @@ public class PlayerMovement : MonoBehaviour
 
 	#region OUR CODE
 	//Bizim kod
+	
 	void PlayDust(){
-		dust.Play();
+		dust.Play();	
 	}
 	void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Enemy")
-        {
-            Kill();
+        {			
+			StartCoroutine(Kill());
         }
     }
-	void Kill(){
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	IEnumerator Kill(){
+		PlayDust();
+		eye.enabled = false;
+		Dash.enabled = false;
+		anim.SetBool("Fade", true);
+        yield return new WaitUntil(()=>black.color.a == 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 	// Bİizm kod
 	#endregion
