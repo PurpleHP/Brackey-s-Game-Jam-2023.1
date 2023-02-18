@@ -7,16 +7,14 @@ public class WaypointFollower : MonoBehaviour
     [SerializeField] Transform[] Waypoints;
     int waypointindex = 0;
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] Rigidbody2D rotate;
 
     void Start()
     {
         transform.position = Waypoints[waypointindex].transform.position;
-        rotate = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
