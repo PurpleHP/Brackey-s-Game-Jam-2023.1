@@ -4951,6 +4951,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!82 &1957050254 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 357020989795751355, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+  m_PrefabInstance: {fileID: 6436134312667447648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6436134312667447648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5027,6 +5032,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 636466314}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: black
+      value: 
+      objectReference: {fileID: 636466315}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: dashMove
       value: 1
       objectReference: {fileID: 0}
@@ -5039,9 +5052,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 1957050254}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6436134313545774825, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
+      propertyPath: PlayerBody
+      value: 
+      objectReference: {fileID: 361829661}
     - target: {fileID: 6436134313545774828, guid: 5410195541b37ec42ad8aeaf785b96d5, type: 3}
       propertyPath: m_Time
       value: 0.2
