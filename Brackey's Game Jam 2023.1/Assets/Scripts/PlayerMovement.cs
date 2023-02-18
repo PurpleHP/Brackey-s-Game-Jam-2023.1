@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+	[SerializeField] AudioSource jumpSound;
 	public bool sideMove = false;
 	public bool dashMove = false;
 	public bool jumpMove = false;
@@ -101,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
 		SetGravityScale(Data.gravityScale);
 		IsFacingRight = true;
 		eye = PlayerBody.GetComponent<SpriteRenderer>();
+		jumpSound = GetComponent<AudioSource>();
 
 	}
 
@@ -127,12 +128,12 @@ public class PlayerMovement : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space) && jumpMove)
         {
 			OnJumpInput();
+			jumpSound.Play();
         }
 
 		if (Input.GetKeyUp(KeyCode.Space) && jumpMove)
 		{
 			OnJumpUpInput();
-
 		}
 
 		if ((Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K)) && dashMove)
