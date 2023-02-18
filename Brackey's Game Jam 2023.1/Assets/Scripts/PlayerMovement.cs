@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] int nextLevel;
     [SerializeField] Animator anim;
 	private SpriteRenderer eye;
+	[SerializeField] GameObject PlayerMove;
+    private PlayerMovement pm;
+	private CircleCollider2D box;
 
  	[SerializeField] GameObject PlayerBody;
 
@@ -101,6 +104,8 @@ public class PlayerMovement : MonoBehaviour
 		SetGravityScale(Data.gravityScale);
 		IsFacingRight = true;
 		eye = PlayerBody.GetComponent<SpriteRenderer>();
+		box = PlayerBody.GetComponent<CircleCollider2D>();
+		pm = PlayerMove.GetComponent<PlayerMovement>();
 		jumpSound = GetComponent<AudioSource>();
 
 	}
@@ -128,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space) && jumpMove)
         {
 			OnJumpInput();
-			jumpSound.Play();
+			//jumpSound.Play();
         }
 
 		if (Input.GetKeyUp(KeyCode.Space) && jumpMove)
@@ -431,6 +436,8 @@ public class PlayerMovement : MonoBehaviour
 		//This means we'll always feel like we jump the same amount 
 		//(setting the player's Y velocity to 0 beforehand will likely work the same, but I find this more elegant :D)
 		float force = Data.jumpForce;
+		jumpSound.Play();
+
 		if (RB.velocity.y < 0)
 			force -= RB.velocity.y;
 
@@ -448,6 +455,8 @@ public class PlayerMovement : MonoBehaviour
 
 		#region Perform Wall Jump
 		Vector2 force = new Vector2(Data.wallJumpForce.x, Data.wallJumpForce.y);
+		jumpSound.Play();
+
 		force.x *= dir; //apply force in opposite direction of wall
 
 		if (Mathf.Sign(RB.velocity.x) != Mathf.Sign(force.x))
@@ -547,6 +556,7 @@ public class PlayerMovement : MonoBehaviour
     }
 	IEnumerator Kill(){
 		PlayDust();
+		pm.enabled = false;
 		eye.enabled = false;
 		Dash.enabled = false;
 		anim.SetBool("Fade", true);

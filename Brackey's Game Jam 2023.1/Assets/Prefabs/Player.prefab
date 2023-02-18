@@ -5092,14 +5092,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1d86803c41bce449642e58340de78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSound: {fileID: 0}
+  jumpSound: {fileID: 357020989795751355}
   sideMove: 0
   dashMove: 1
   jumpMove: 1
   black: {fileID: 0}
   nextLevel: 0
   anim: {fileID: 0}
-  PlayerBody: {fileID: 0}
+  PlayerMove: {fileID: 6436134313545774820}
+  PlayerBody: {fileID: 6436134313545774820}
   Dash: {fileID: 6436134313545774828}
   dust: {fileID: 6436134312005169024}
   Data: {fileID: 11400000, guid: 84a5bc742e694c54f89c978e32c365ad, type: 2}

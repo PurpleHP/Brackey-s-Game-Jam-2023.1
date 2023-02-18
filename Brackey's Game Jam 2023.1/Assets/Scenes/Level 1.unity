@@ -445,6 +445,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1923710502720154150, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_margin.w
+      value: 600.53827
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154150, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_margin.y
+      value: 119.107025
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154150, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_margin.z
+      value: 202.85513
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154150, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ce679ad93c3e51843a16dd9077494402, type: 2}
+    - target: {fileID: 1923710502720154150, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8739151865958715462, guid: ce679ad93c3e51843a16dd9077494402, type: 2}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923710502720154152, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1923710504094053376, guid: 5b0a1d271ebf18c4c8a87361379cf0c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1182,7 +1230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dashTime
-      value: 200
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: eyesTime
@@ -1233,7 +1281,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: sentences.Array.data[6]
-      value: Is there any problem? Why are you still waiting go inside the portal.
+      value: Is there any problem? Why are you still waiting, just go inside the
+        portal.
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: sentences.Array.data[7]
@@ -1254,7 +1303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dialogueTime.Array.data[6]
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4545458060569785119, guid: 1457ad3c53cf4104d87d50761232ad58, type: 3}
       propertyPath: dialogueTime.Array.data[7]
