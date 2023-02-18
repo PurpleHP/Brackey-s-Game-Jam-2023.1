@@ -649,7 +649,6 @@ MonoBehaviour:
   - {fileID: 307056134}
   - {fileID: 1717718719}
   moveSpeed: 4.3
-  rotate: {fileID: 532066922}
 --- !u!212 &532066918
 SpriteRenderer:
   m_ObjectHideFlags: 0
