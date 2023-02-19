@@ -13,6 +13,7 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] AudioSource jumpSound;
+	[SerializeField] AudioSource dashSound;
 	public bool sideMove = false;
 	public bool dashMove = false;
 	public bool jumpMove = false;
@@ -224,8 +225,8 @@ public class PlayerMovement : MonoBehaviour
 		if (CanDash() && LastPressedDashTime > 0)
 		{
 			//Freeze game for split second. Adds juiciness and a bit of forgiveness over directional input
-			Sleep(Data.dashSleepTime); 
-
+			Sleep(Data.dashSleepTime);
+			dashSound.Play();
 			//If not direction pressed, dash forward
 			if (_moveInput != Vector2.zero)
 				_lastDashDir = _moveInput;
