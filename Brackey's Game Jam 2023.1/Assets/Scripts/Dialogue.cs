@@ -12,10 +12,13 @@ public class Dialogue : MonoBehaviour
     [SerializeField] float counter = 0f;
     private bool checkDia = true;
     private int index;
+    [SerializeField] private bool ghostLevel = false;
+    public bool startGhost = false;
+    [SerializeField] private bool lastLevel = false;
 
+    public bool startConv = false;
     void Start()
     {
-        StartCoroutine(Type());
     }
 
     IEnumerator Type()
@@ -29,16 +32,32 @@ public class Dialogue : MonoBehaviour
     private void Update()
     {
         counter += Time.deltaTime;
-
-        foreach (float a in dialogueTime)
-        {
-            if ((a < counter && a > counter - 0.8) && checkDia)
+        if(!ghostLevel){
+            foreach (float a in dialogueTime)
             {
-                checkDia = false;
-                StartCoroutine(NextSentences());
+                if ((a < counter && a > counter - 0.8) && checkDia)
+                {
+                    checkDia = false;
+                    StartCoroutine(NextSentences());
+                }
             }
         }
+        else if(ghostLevel){
+            if(startGhost){
+                StartCoroutine(Type());
+                startGhost = false;
+            }
+        }
+        else if(lastLevel){
+            if(startConv){
+                StartCoroutine(Type());
+                startConv = false;
+            }
+           
+        }
     }
+        
+    
 
     IEnumerator NextSentences()
     {

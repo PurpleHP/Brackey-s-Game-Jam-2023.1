@@ -554,9 +554,18 @@ public class PlayerMovement : MonoBehaviour
 			StartCoroutine(Kill());
         }
     }
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		 if (other.CompareTag("Enemy"))
+        {			
+			StartCoroutine(Kill());
+        }
+	}
 	IEnumerator Kill(){
 		PlayDust();
 		pm.enabled = false;
+		box.enabled = false;
+		PlayerBody.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
 		eye.enabled = false;
 		Dash.enabled = false;
 		anim.SetBool("Fade", true);

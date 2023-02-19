@@ -5832,7 +5832,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1500, y: -798}
+  m_SizeDelta: {x: -1411.319, y: -606.449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1015677558
 GameObject:
@@ -5960,7 +5960,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PurpleHP & GreenHP
+  m_text: 'PurpleHP & GreenHP
+
+    Discord: PHP#8745 / GreenHP#8101
+
+    Movement
+    script by DawnosaurDev on YT
+
+    Bg music: https://pixabay.com/users/alanfrijns-16705522/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=115453%22%3EAlanFrijns%3C/a%3E'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceb7d486ec9d132449633e98e94cc3a1, type: 2}
   m_sharedMaterial: {fileID: -375191173805506047, guid: ceb7d486ec9d132449633e98e94cc3a1, type: 2}
@@ -5987,14 +5994,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.2
-  m_fontSizeBase: 26.2
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 3
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
